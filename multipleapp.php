@@ -12,25 +12,56 @@ function Timestable($multiplier)
         echo "<br>";
 
         break;
-       //   $multiplier++;
+      
     }
     
 }
 
-Timestable(6    );
 
 
 
+function Divisiontable ($dividend,$divisor=1)
+{   
 
-/*for ($multiplier=1; $multiplier <=12 ; $multiplier++) { 
-
-    for ($multiple=1; $multiple <=12 ; $multiple++) { 
-        $product = $multiplier*$multiple;
-        echo  $multiplier . "*" . $multiple . "=" . $product . "<br>";
+    if ($divisor == 0 && $dividend == 0 )
+    {
+        echo "Undefined which means it's a math error";
+    } 
+  
+    elseif ($dividend ==  0 || $divisor == 0) 
+    {
+        echo 0;
     }
-    echo "<br>";
- }*/
-        
+   
+    else
+    {
+        while ($dividend > 0) 
+        {
+           // for ($divisor = 2; $divisor <=12 ; $divisor++) 
+          while($divisor <= 20)
+            { 
+
+                $dividedresult= $dividend / $divisor;
+                
+                echo $dividend . "/" . $divisor . "=" . $dividedresult ."<br>";  
+
+                   $divisor++;
+           }     
+           echo "<br>";
+          break;
+        }         
+    
+    }
+            
+}
+
+
+
+
+
+
+
+
 
 
 
