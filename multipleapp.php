@@ -18,11 +18,12 @@ function Timestable($multiplier)
 }
 
 
+Timestable(6);
+
 
 
 function Divisiontable ($dividend,$divisor=1)
 {   
-
     if ($divisor == 0 && $dividend == 0 )
     {
         echo "Undefined which means it's a math error";
